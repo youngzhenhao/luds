@@ -1,30 +1,30 @@
-LNURL Documents
+LNURL 文档
 ===============
 
-These are all the individual documents describing each small piece of protocol that can be implemented under the LNURL umbrella. Different wallets and services may implement different sets of protocols.
+这些都是描述可以在 LNURL 框架下实现的每一小部分协议的单独文档。不同的钱包和服务可以实现不同的协议集。
 
-| Number   | Description                                                 | Wallets (in alphabetical order) |
+| Number   |描述| Wallets (in alphabetical order) |
 |----------|-------------------------------------------------------------|---------|
-| [01][01] | Base LNURL encoding and decoding.                           | _all the ones listed below_ |
-| [02][02] | `channelRequest` base spec.                                 | [Balance of Satoshis][bos], [BitBanana][bitbanana], [Blixt][blixt], [Breez][breez], [cliché][cliche], [OBW][obw], [Zap Android][zap], [Zap Desktop][zap], [Zeus][zeus] |
-| [03][03] | `withdrawRequest` base spec.                                | [Alby][alby], [Balance of Satoshis][bos], [BitBanana][bitbanana], [Blixt][blixt], [BlueWallet][bluewallet], [Breez][breez], [Clams][clams], [CoinCorner][coincorner], [coinos][coinos], [Fountain][fountain], [LifPay][lifpay], [LNbits][lnbits], [LightningTipBot][ltb], [Mash][mash], [Muun][muun], [Phoenix][phoenix], [Pouch.ph][pouchph], [ShockWallet][shockwallet], [OBW][obw], [OneKey][onekey], [ThunderHub][thunderhub], [Wallet of Satoshi][wos], [Zap Android][zap], [Zap Desktop][zap], [Zap iOS][zap], [ZBD Discord][zbd], [ZBD Extension][zbd], [ZBD Telegram][zbd], [ZEBEDEE][zbd], [Zeus][zeus] |
-| [04][04] | Auth base spec.                                             | [Alby][alby], [Balance of Satoshis][bos], [BitBanana][bitbanana], [Blixt][blixt], [Breez][breez], [BlueWallet][bluewallet], [Clams][clams], [coinos][coinos], [Geyser][geyser], [LifPay][lifpay], [LNbits][lnbits], [LightningTipBot][ltb], [Phoenix][phoenix], [SeedAuth][seedauth], [SeedAuthExtension][sae], [OBW][obw], [OneKey][onekey], [Sparrow Wallet][sparrow], [ThunderHub][thunderhub], [Zap Desktop][zap], [Zeus][zeus] |
-| [05][05] | BIP32-based seed generation for auth protocol.              | [Alby][alby], [coinos][coinos], [OBW][obw], [OneKey][onekey], [Phoenix][phoenix] |
-| [06][06] | `payRequest` base spec.                                     | [Alby][alby], [Balance of Satoshis][bos], [Bipa][bipa], [BitBanana][bitbanana], [Blixt][blixt], [BlueWallet][bluewallet], [Breez][breez], [BTCPayServer][btcp], [Clams][clams], [cliché][cliche], [CoinCorner][coincorner], [coinos][coinos], [Electrum][electrum], [Fountain][fountain], [Galoy][galoy], [Geyser][geyser], [LifPay][lifpay], [LNbits][lnbits], [LNLink][lnlink], [LNPay.co][lnpay], [LightningTipBot][ltb], [Machankura][machankura], [Mash][mash], [OBW][obw], [OneKey][onekey], [Phoenix][phoenix], [Pouch.ph][pouchph], [River][river], [River Lightning][riverlightning], [ShockWallet][shockwallet], [ThunderHub][thunderhub], [Wallet of Satoshi][wos], [Zap Android][zap], [ZBD Discord][zbd], [ZBD Extension][zbd], [ZBD Telegram][zbd], [ZEBEDEE][zbd], [Zeus][zeus] |
-| [07][07] | `hostedChannelRequest` base spec.                           | [OBW][obw] |
-| [08][08] | Fast `withdrawRequest`.                                     | [cliché][cliche], [OBW][obw], [ZBD Extension][zbd] |
-| [09][09] | `successAction` field for `payRequest`.                     | [Alby][alby], [BitBanana][bitbanana], [Blixt][blixt], [BlueWallet][bluewallet], [Breez][breez], [Clams][clams], [cliché][cliche], [coinos][coinos], [Fountain][fountain], [LifPay][lifpay], [LNbits][lnbits], [LightningTipBot][ltb], [Phoenix][phoenix], [ShockWallet][shockwallet], [OBW][obw], [OneKey][onekey], [ThunderHub][thunderhub], [Wallet of Satoshi][wos], [Zap Android][zap], [ZBD Discord][zbd], [ZBD Extension][zbd], [ZBD Telegram][zbd], [ZEBEDEE][zbd], [Zeus][zeus] |
-| [10][10] | `aes` success action in `payRequest`.                       | [Alby][alby], [BitBanana][bitbanana], [Blixt][blixt], [BlueWallet][bluewallet], [Breez][breez], [Clams][clams], [cliché][cliche], [coinos][coinos], [LNbits][lnbits], [Phoenix][phoenix], [ShockWallet][shockwallet], [OBW][obw], [ThunderHub][thunderhub], [Wallet of Satoshi][wos], [Zap Android][zap], [Zeus][zeus] |
-| [11][11] | Disposable and storeable `payRequest`s.                     | [Blixt][blixt], [OBW][obw], [ZBD Extension][zbd] |
-| [12][12] | Comments in `payRequest`.                                   | [Alby][alby], [Bipa][bipa], [BitBanana][bitbanana], [Blixt][blixt], [BlueWallet][bluewallet], [Breez][breez], [Clams][clams], [Fountain][fountain], [LifPay][lifpay], [LNbits][lnbits], [LightningTipBot][ltb], [OneKey][onekey], [Phoenix][phoenix], [Stacker.News][stacker.news], [ThunderHub][thunderhub],  [ZBD Discord][zbd], [ZBD Extension][zbd], [ZBD Telegram][zbd], [ZEBEDEE][zbd], [Zeus][zeus] |
-| [13][13] | `signMessage`-based seed generation for auth protocol.      | [Alby][alby], [Balance of Satoshis][bos], [BitBanana][bitbanana], [Blixt][blixt], [Clams][clams], [Zeus][zeus] |
-| [14][14] | `balanceCheck`: reusable `withdrawRequest`s.                | [Alby][alby], [Blixt][blixt], [LNbits][lnbits], |
-| [15][15] | `balanceNotify`: services hurrying up the withdraw process. | [LNbits][lnbits] |
-| [16][16] | Paying to static internet identifiers.                      | [Alby][alby], [Bipa][bipa], [Balance of Satoshis][bos], [BitBanana][bitbanana], [Blixt][blixt], [BTCPayServer][btcp], [Clams][clams], [cliché][cliche], [CoinCorner][coincorner], [coinos][coinos], [Fountain][fountain], [LifPay][lifpay], [LNbits][lnbits], [LNLink][lnlink], [LightningTipBot][ltb], [Machankura][machankura], [Mash][mash], [OBW][obw], [OneKey][onekey], [Phoenix][phoenix], [Pouch.ph][pouchph], [River][river], [River Lightning][riverlightning], [Stacker.News][stacker.news], [Zap Android][zap], [ZBD Discord][zbd], [ZBD Extension][zbd], [ZBD Telegram][zbd], [ZEBEDEE][zbd], [Zeus][zeus] |
-| [17][17] | Scheme prefixes and raw (non bech32-encoded) URLs.          | [Alby][alby], [BitBanana][bitbanana], [Blixt][blixt], [BTCPayServer][btcp], [Clams][clams], [cliché][cliche], [CoinCorner][coincorner], [LifPay][lifpay], [Mash][mash], [OneKey][onekey], [ZBD Discord][zbd], [ZBD Telegram][zbd] | [Wallet of Satoshi][wos] |
-| [18][18] | Payer identity in `payRequest` protocol.                    | [Alby][alby], [BitBanana][bitbanana], [Blixt][blixt], [cliché][cliche], [OBW][obw], [ZBD Discord][zbd], [ZBD Telegram][zbd] |
-| [19][19] | Pay link discoverable from withdraw link.                   | [Blixt][blixt], [CoinCorner][coincorner], [OBW][obw], [LNbits][lnbits] |
-| [20][20] | Long payment description for pay protocol.                  | [Alby][alby], [BitBanana][bitbanana], [Blixt][blixt], [Clams][clams], [cliché][cliche], [Mash][mash], [OneKey][onekey], [Phoenix][phoenix] |
+| [01][01] |基本 LNURL 编码和解码。| _all the ones listed below_ |
+| [02][02] | `channelRequest` base spec.                                 |[Satoshis 平衡][BOS]，[BitBanana][BitBanana]，[Blixt][Blixt]，[布利兹][布利兹]，[Cliché][Cliche]，[OBW][OBW]，[Zap Android][Zap]，[Zap Desktop][Zap]，[宙斯][宙斯]|
+| [03][03] | `withdrawRequest` base spec.                                |[Alby][Alby]，[Balance of Satoshis][BOS]，[BitBanana][BitBanana]，[BLIXT][BLIXT]，[BlueWallet][BlueWallet]，[Breez]，[CLAMS]，〔 CoinCorner 〕[CoinCorner 〕，〔 Coinos 〕[Coinos 〕，〔 Fountain 〕[Fountain]，[LightningTipBot][LTB]，[Mash][Mash]，[MuUN][MuUN]，[Phoenix][Phoenix]、[Pouch.pH][PouchPh]、[ShockWallet][ShockWallet]、[OBW][OBW]、[OneKey][OneKey]、[ThunderHub][ThunderHub]、[小智的钱包][WOS]、[ZAP 桌面][ZAP]，[ZAP IOS][Zap]，[ZBD 不和谐][zbd]，[zbd 扩展][zbd]，[zbd 电报][zBD]，[西庇太][zBD]，[宙斯][Zeus]|
+| [04][04] | Auth base spec.                                             |[Alby][Alby]，[Balance of Satoshis][Bos]，[Bitbanana][Bitbanana]，[BLIXT][BLIXT]，（Breez） [Breez]，（BlueWallet） [BlueWallet]，[CLAMS][CLAMS]，[COINOS][COINOS]，[GEYSER]，[LIFPAY][LIFPAY[Phoenix][Phoenix]，[Seedauth][Seedauth]，[SeedAuthExtension][SAE]，[OBW][OBW]，[OneKey][OneKey]，[Sparrow Wallet][Sparrow]，[ThunderHub]，[Zap Desktop][Zap]，「Zeus」[Zeus]|
+| [05][05] | BIP32-based seed generation for auth protocol.              |[ALBY][ALBY]，[COINOS][COINOS]，[OBW][OBW]，[ONEKEY][ONEKEY]，[凤凰][凤凰]|
+| [06][06] | `payRequest` base spec.                                     |[Alby][Alby]，[Balance of Satoshis][BOS]，[BIPA][BIPA]，[bitBanana][bitBanana]、[blixt][blixt]、[blueWallet][blueWallet]、[breez][breez]、[btcpayserver][btcp]、[clams]、[cliché][cliche]、[coincorner]，[coinos][[ELECTRUM][ELECTRUM]，[FOUNTAIN][FOUNTAIN]，[GALOY][GALOY]，[GEYSER][GEYSER]，[LIFPAY]，[LNBITS]，[lnlink]，[lnpay.Co][lnpay]，〔 Lightningtipbot 〕[LTB]，〔 MACHANK[OneKey][OneKey]，[Phoenix][Phoenix]，[Pouch.pH][Pouchph]，[River][River]，[河闪电][RiverLightning]，[河钱包][ShockWallet]、[ThunderHub][ThunderHub]、[小智钱包][WOS]、[Zap Android][Zap]、[ZBD Discord][ZBD]、[ZBD Extension][[ZBD 电报][ZBD]，[西庇太][ZBD]，[宙斯][宙斯]|
+| [07][07] | `hostedChannelRequest` 基本规格| [OBW][obw] |
+| [08][08] |速度快 `withdrawRequest`。| [cliché][cliche], [OBW][obw], [ZBD Extension][zbd] |
+| [09][09] | `successAction` field for `payRequest`.                     |[ALBY][ALBY]，[BITBANANA][BITBANANA]，[BLIXT][BLIXT]，[BLUEWALLET][BLUEWALLET]，[BREEZ]，[CLAMS]，[CLICHE]，〔 COINOS 〕[COINOS 〕，〔 FOUNTAIN 〕[FOUNTAIN 〕，〔 [Phoenix][Phoenix]，[ShockWallet][ShockWallet]，[OBW][OBW]，[OneKey][OneKey]，[ThunderHub][ThunderHub]，[Satoshi 的钱包][WOS]、[Zap Android][Zap]、[zbd Discord][zbd]、[zbd Extension][zbd]、〔 zbd Telegram 〕 [zbd 〕、〔 Zebedee[宙斯][宙斯]|
+| [10][10] | `aes` success action in `payRequest`.                       |[ALBY][ALBY]，[BITBANANA][BITBANANA]，[BLIXT][BLIXT]，[BLUEWALLET][BLUEWALLET]，[BREEZ]，[CLAMS]，[CLICHE]、[COINOS]、[LNBITS][LNBITS][ThunderHub][ThunderHub]，[小智的钱包][WOS]，[Zap Android][Zap]，[宙斯][宙斯]|
+| [11][11] |一次性和可储存 `payRequest` 的。| [Blixt][blixt], [OBW][obw], [ZBD Extension][zbd] |
+| [12][12] | Comments in `payRequest`.                                   |[ALBY][ALBY]，[BIPA][BIPA]，[BITBANANA][BITBANANA]，[BLIXT][BLIXT]，[BLUEWALLET]，[BREEZ]，[CLAMS]，[FOUNTAIN]，〔 LIFPAY 〕[LIFPAY 〕，〔 LNB[Phoenix][Phoenix]，[Stacker.News][Stacker.News]，[ThunderHub][ThunderHub]，[ZBD Discord][ZBD]，[ZBD Extension][ZBD]，[ZBD Telegram][zbd]，[西庇太][zbd]，[宙斯][宙斯]|
+| [13][13] | `signMessage`-based seed generation for auth protocol.      |[Alby][Alby]，[Satoshis 的平衡][Bos]，[Bitbanana][Bitbanana]，[Blixt][Blixt]，[蛤][蛤]，[宙斯][宙斯]|
+| [14][14] | `balanceCheck`：可重复使用 `withdrawRequest`| [Alby][alby], [Blixt][blixt], [LNbits][lnbits], |
+| [15][15] | `balanceNotify`：加快提款流程的服务。| [LNbits][lnbits] |
+| [16][16] | Paying to static internet identifiers.                      |[ALBY][ALBY]，[BIPA][BIPA]，[SATOSHIS 平衡][BOS]，[BITBANANA][BITBANANA]，（BLIXT） [BLIXT]，（BTCPAYSERVER） [BTCP]，[CLAMS]，[CLICHE][CLICHE]，[COINCORNER][COINCORNER]，[COINOS][lnbits][lnbits]，[lnlink][lnlink]，[LightningTipBot][LTB]，[Machankura][Machankura]，（MASH） [MASH]，（OBW） [OBW]，[ONEKEY]，[Phoenix]，[POUCH.pH][POUCHPH]，[RIVER][RIVER]，[河闪电 [zap 安卓][zap]，[zbd 不和][zbd]，[zbd 扩展][ZBD]，[ZBD 电报][ZBD]，[西庇太][Zbd]，[宙斯][Zeus]|
+| [17][17] | Scheme prefixes and raw (non bech32-encoded) URLs.          |[Alby][Alby]，[Bitbanana][Bitbanana]，[Blixt][Blixt]，[btcpayserver][btcp]，（clams） [clams]，（cliché） [cliche]，[CoinCorner][CoinCorner]，[LifPay]，[Mash]，〔 OneKey 〕，〔 ZBD Discord 〕〔 ZBD 〕，〔 ZBD| [Wallet of Satoshi][wos] |
+| [18][18] | Payer identity in `payRequest` protocol.                    |[ALBY][ALBY]，[BITBANANA][BITBANANA]，[BLIXT][BLIXT]，[CLICHE][CLICHE]，[OBW]，[ZBD Discord][ZBD]，[ZBD Telegram][zbd]|
+| [19][19] | Pay link discoverable from withdraw link.                   |[Blixt][Blixt]，[CoinCorner][CoinCorner]，[OBW][OBW]，[LnBits][LnBits]|
+| [20][20] | Long payment description for pay protocol.                  |[ALBY][ALBY]，[BITBANANA][BITBANANA]，[BLIXT][BLIXT]，[CLAMS][CLAMS]，[Cliché][Cliche]，[MASH]，[ONEKEY]，[PHOENIX][PHOENIX]|
 
 [alby]: https://github.com/getAlby/lightning-browser-extension
 [bipa]: https://bipa.app
@@ -62,99 +62,99 @@ These are all the individual documents describing each small piece of protocol t
 [seedauth]: https://seedauth.etleneum.com/
 [shockwallet]: https://shockwallet.app
 [sparrow]: https://sparrowwallet.com/
-[stacker.news]: https://stacker.news/
+[Stacker.news]：https://stacker.news/
 [thunderhub]: https://www.thunderhub.io
 [wos]: https://www.walletofsatoshi.com
 [zap]: https://zaphq.io/
 [zbd]: https://zebedee.io/wallet
 [zeus]: https://zeusln.app
 
-Services
+服务
 --------
 
-| Name                                                                                                | LUDs                                                           |
+|名字| LUDs                                                           |
 | ----                                                                                                | ----                                                           |
-| [Azteco](https://azte.co/)                                                                          | [01][01] [03][03]                                              |
-| [Bipa](https://bipa.app)                                                                          | [01][01] [06][06] [12][12] [16][16]                                              |
-| [BTC Origin Stories](https://btcoriginstories.com/)                                                 | [01][01] [06][06]                                              |
-| [Bitcoin Bounce](https://thndr.games/)                                                              | [01][01] [03][03] [08][08]                                     |
-| [Bitrefill](https://bitrefill.com/)                                                                 | [01][01] [02][02] [06][06] [16][16]                            |
-| [Blocktank](https://synonym.to/blocktank/)                                                          | [01][01] [02][02]                                              |
-| [Bull Bitcoin](https://www.bullbitcoin.com/)                                                        | [01][01] [03][03]                                              |
-| [CoinCorner](https://www.coincorner.com)                                                            | [01][01] [03][03] [06][06] [16][16] [17][17] [19][19]          |
-| [Fountain Podcasts](https://fountain.fm)                                                            | [01][01] [03][03] [06][06] [09][09] [12][12] [16][16]          |
-| [Galoy](https://galoy.io/)                                                                          | [01][01] [06][06]                                              |
-| [Geyser](https://geyser.fund/)                                                                      | [01][01] [04][04] [06][06]                                     |
-| [Going Dutch](https://goingdutch.pm/)                                                               | [01][01] [03][03] [06][06]                                     |
-| [HangarSix](https://www.hangarsixgaming.com/)                                                       | [01][01] [03][03]                                              |
-| [IBEXHub](https://ibexmercado.gitbook.io/ibex-hub-api/reference/api-reference)                      | [01][01] [03][03] [06][06] [16][16]                            |
-| [Infuse](https://zebedee.io/infuse/)                                                                | [01][01] [03][03]                                              |
-| [Kollider](https://kollider.xyz/)                                                                   | [01][01] [03][03] [04][04]                                     |
-| [LifPay](https://lifpay.me)                                                                         | [01][01] [03][03] [04][04] [06][06] [09][09] [12][12] [16][16] [17][17]                   |
-| [LNBIG](https://lnbig.com/)                                                                         | [01][01] [02][02]                                              |
-| [ln.cash](https://ln.cash)                                                                          | [01][01] [03][03]                                              |
-| [LNMarkets](https://lnmarkets.com/)                                                                 | [01][01] [03][03] [04][04] [06][06] [16][16]                   |
-| [LNPay.co](https://lnpay.co)                                                                        | [01][01] [03][03] [06][06] [14][14]                            |
-| [LNbits.com](https://lnbits.com/)                                                                   | [01][01] [03][03] [04][04] [14][14] [15][15]                   |
-| [Lightning.Video](https://lightning.video/)                                                         | [01][01] [04][04] [06][06] [16][16]                            |
-| [Lightning Gifts](https://lightning.gifts/)                                                         | [01][01] [03][03] [06][06] [12][12]                            |
-| [LightningTipBot](https://ln.tips/)                                                                 | [01][01] [03][03] [06][06] [09][09] [12][12] [16][16] [18][18] |
-| [Lnurl-Pay Chat](https://chat.blixtwallet.com/)                                                     | [01][01] [06][06] [11][11] [12][12] [18][18]                   |
-| [Loft](https://loft.trade/)                                                                         | [01][01] [03][03] [04][04]                                     |
-| [Machankura](https://8333.mobi)                                                                     | [01][01] [06][06] [16][16]                                     |
-| [Mash](https://mash.com)                                                                            | [01][01] [03][03] [06][06] [16][16]                            |
-| [Microlancer](https://microlancer.io/)                                                              | [01][01] [03][03] [14][14]                                     |
-| [OpenNode](https://developers.opennode.com/reference/initiate-lnurl-withdrawal)                     | [01][01] [03][03]                                              |
-| [Paywall](https://paywall.link)                                                                     | [01][01] [03][03]                                              |
-| [River Lightning](https://rls.dev)                                                                  | [01][01] [03][03] [06][06] [16][16] [17][17]                   |
-| [Sats4Likes](https://sats4likes.com/)                                                               | [01][01] [03][03] [14][14] [16][16]                            |
-| [Satsback.com](https://satsback.com)                                                                | [01][01] [03][03] [06][06] [16][16]                            |
-| [sms4sats](https://sms4sats.com/)                                                                   | [01][01] [03][03]                                              |
-| [SouthXchange](https://www.southxchange.com/)                                                       | [01][01] [03][03]                                              |
-| [Stacker.News](https://stacker.news/)                                                               | [01][01] [03][03] [04][04] [06][06] [12][12] [16][16]          |
-| [Surfcity Parking](https://surfcity.app/)                                                           | [01][01] [03][03]                                              |
-| [Wheel of Fortune](https://fortune.lngames.net)                                                     | [01][01] [03][03] [04][04]                                     |
-| [bridgeaddr](https://bridgeaddr.fiatjaf.com)                                                        | [01][01] [06][06] [09][09] [12][12] [16][16]                   |
-| [coinos](https://coinos.io/)                                                                        | [01][01] [03][03] [04][04] [06][06] [16][16]                   |
-| [lnshort.it](https://lnshort.it/)                                                                   | [01][01] [04][04] [06][06]                                     |
-| [lnsms.world](https://lnsms.world/)                                                                 | [01][01] [06][04] [11][11] [12][12] [16][16]                   |
-| [lnurl-pay.me](https://lnurl-pay.me)                                                                | [01][01] [06][06] [16][16]                                     |
-| [pollofeed](https://pollofeed.com)                                                                  | [01][01] [06][06] [16][16]                                     |
-| [zbd.gg](https://zbd.gg/)                                                                           | [01][01] [03][03] [06][06] [09][09] [12][12] [16][16]          |
-| [lnurlpay.com](https://lnurlpay.com/)                                                               | [01][01] [06][06] [12][12] [16][16]                            |
-| [zero fee routing](https://zerofeerouting.com/mobile-wallets/)                                      | [01][01] [02][02]                                              |
-| [strike.army](https://strike.army/)                                                                 | [01][01] [03][03] [06][06] [12][12] [16][16]                   |
+|[Azteco](https://azte.co/)| [01][01] [03][03]                                              |
+|[Bipa](https://bipa.app)| [01][01] [06][06] [12][12] [16][16]                                              |
+|[BTC 起源故事](https://btcoriginstories.com/)| [01][01] [06][06]                                              |
+|[比特币反弹](https://thndr.games/)| [01][01] [03][03] [08][08]                                     |
+|[Bitrefill](https://bitrefill.com/)| [01][01] [02][02] [06][06] [16][16]                            |
+|[Blocktank](https://synonym.to/blocktank/)| [01][01] [02][02]                                              |
+|[牛市比特币](https://www.bullbitcoin.com/)| [01][01] [03][03]                                              |
+|[CoinCorner](https://www.coincorner.com)| [01][01] [03][03] [06][06] [16][16] [17][17] [19][19]          |
+|[喷泉播客](https://fountain.fm)| [01][01] [03][03] [06][06] [09][09] [12][12] [16][16]          |
+|[Galoy](https://galoy.io/)| [01][01] [06][06]                                              |
+|[Geyser](https://geyser.fund/)| [01][01] [04][04] [06][06]                                     |
+|[各付各的](https://goingdutch.pm/)| [01][01] [03][03] [06][06]                                     |
+|[HangarSix](https://www.hangarsixgaming.com/)| [01][01] [03][03]                                              |
+|[IBEXHub](https://ibexmercado.gitbook.io/ibex-hub-api/reference/api-reference)| [01][01] [03][03] [06][06] [16][16]                            |
+|[Infuse](https://zebedee.io/infuse/)| [01][01] [03][03]                                              |
+|[Kollider](https://kollider.xyz/)| [01][01] [03][03] [04][04]                                     |
+|[LifPay](https://lifpay.me)| [01][01] [03][03] [04][04] [06][06] [09][09] [12][12] [16][16] [17][17]                   |
+|[LNBIG](https://lnbig.com/)| [01][01] [02][02]                                              |
+|[ln.cash](https://ln.cash)| [01][01] [03][03]                                              |
+|[LNMarkets](https://lnmarkets.com/)| [01][01] [03][03] [04][04] [06][06] [16][16]                   |
+|[LNPay.co](https://lnpay.co)| [01][01] [03][03] [06][06] [14][14]                            |
+|[LNbits.com](https://lnbits.com/)| [01][01] [03][03] [04][04] [14][14] [15][15]                   |
+|[闪电.视频](https://lightning.video/)| [01][01] [04][04] [06][06] [16][16]                            |
+|[闪电礼物](https://lightning.gifts/)| [01][01] [03][03] [06][06] [12][12]                            |
+|[闪电机器人](https://ln.tips/)| [01][01] [03][03] [06][06] [09][09] [12][12] [16][16] [18][18] |
+|[lnurl-pay 聊天](https://chat.blixtwallet.com/)| [01][01] [06][06] [11][11] [12][12] [18][18]                   |
+|[Loft](https://loft.trade/)| [01][01] [03][03] [04][04]                                     |
+|[Machankura](https://8333.mobi)| [01][01] [06][06] [16][16]                                     |
+|[Mash](https://mash.com)| [01][01] [03][03] [06][06] [16][16]                            |
+|[微型枪骑兵](https://microlancer.io/)| [01][01] [03][03] [14][14]                                     |
+|[OpenNode](https://developers.opennode.com/reference/initiate-lnurl-withdrawal)| [01][01] [03][03]                                              |
+|[Paywall](https://paywall.link)| [01][01] [03][03]                                              |
+|[河流闪电](https://rls.dev)| [01][01] [03][03] [06][06] [16][16] [17][17]                   |
+|[Sats4Likes](https://sats4likes.com/)| [01][01] [03][03] [14][14] [16][16]                            |
+|[Satsback.com](https://satsback.com)| [01][01] [03][03] [06][06] [16][16]                            |
+|[sms4sats](https://sms4sats.com/)| [01][01] [03][03]                                              |
+|[南方交易所](https://www.southxchange.com/)| [01][01] [03][03]                                              |
+|[斯塔克新闻](https://stacker.news/)| [01][01] [03][03] [04][04] [06][06] [12][12] [16][16]          |
+|[冲浪城市停车场](https://surfcity.app/)| [01][01] [03][03]                                              |
+|[命运之轮](https://fortune.lngames.net)| [01][01] [03][03] [04][04]                                     |
+|[bridgeaddr](https://bridgeaddr.fiatjaf.com)| [01][01] [06][06] [09][09] [12][12] [16][16]                   |
+|[coinos](https://coinos.io/)| [01][01] [03][03] [04][04] [06][06] [16][16]                   |
+|[lnshort.it](https://lnshort.it/)| [01][01] [04][04] [06][06]                                     |
+|[LNSMS.世界](https://lnsms.world/)| [01][01] [06][04] [11][11] [12][12] [16][16]                   |
+|[lnurl-pay.me](https://lnurl-pay.me)| [01][01] [06][06] [16][16]                                     |
+|[pollofeed](https://pollofeed.com)| [01][01] [06][06] [16][16]                                     |
+|[zbd.gg](https://zbd.gg/)| [01][01] [03][03] [06][06] [09][09] [12][12] [16][16]          |
+|[Lnurlpay.com](https://lnurlpay.com/)| [01][01] [06][06] [12][12] [16][16]                            |
+|[零费路由](https://zerofeerouting.com/mobile-wallets/)| [01][01] [02][02]                                              |
+|[罢工.军队](https://strike.army/)| [01][01] [03][03] [06][06] [12][12] [16][16]                   |
 
 [rtb]: https://play.google.com/store/apps/details?id=com.pseudozach.rewardstobitcoin
 
-Self-hosted
+自我托管
 -----------
 
-| Name                                                                                       | LUDs                                         |
+|名字| LUDs                                         |
 | ----                                                                                       | ----                                         |
-| [Addressless](https://github.com/futurepaul/addressless)                                   | [01][01] [06][06] [09][09] [16][16]          |
-| [Bleskomat](https://github.com/samotari/bleskomat)                                         | [01][01] [03][03]                            |
-| [BTCPayServer](https://btcpayserver.org/)                                                  | [01][01] [06][06] [16][16] [17][17]          |
-| [Citadel Bitcoin Node](https://github.com/runcitadel)                                      | [01][01] [06][06] [16][16]                   |
-| [Cypherapp](https://github.com/SatoshiPortal/lnurl_cypherapp)                              | [01][01] [03][03]                            |
-| [LNURL Daemon](https://github.com/yanascz/lnurld)                                          | [01][01] [06][06] [09][09] [12][12] [16][16] |
-| [LNURLPoS](https://github.com/arcbtc/LNURLPoS)                                             | [01][01] [06][06] [09][09]                   |
-| [LNURLp](https://github.com/lnbits/lnbits/tree/master/lnbits/extensions/lnurlp)            | [01][01] [06][06] [12][12]                   |
-| [LNURLw](https://github.com/lnbits/lnbits/tree/master/lnbits/extensions/withdraw)          | [01][01] [03][03]                            |
-| [LNbits.com](https://github.com/fiatjaf/lnbits)                                            | [01][01] [03][03] [04][04] [14][14] [15][15] |
-| [LightningATM](https://github.com/21isenough/LightningATM)                                 | [01][01] [03][03]                            |
-| [NextPay](https://github.com/apotdevin/NextPay)                                            | [01][01] [06][06] [16][16]                   |
-| [OfflineShop](https://github.com/lnbits/lnbits/tree/master/lnbits/extensions/offlineshop)  | [01][01] [06][06] [09][09]                   |
-| [Satdress](https://github.com/fiatjaf/satdress)                                            | [01][01] [06][06] [09][09] [16][16]          |
-| [Streamer Copilot](https://github.com/lnbits/lnbits/tree/master/lnbits/extensions/copilot) | [01][01] [06][06] [12][12]                   |
-| [go-host-lnaddr](https://github.com/hieblmi/go-host-lnaddr)                                | [01][01] [06][06] [09][09] [16][16]          |
-| [ligess](https://github.com/Dolu89/ligess/)                                                | [01][01] [06][06] [09][09] [16][16]          |
-| [lnme](https://github.com/bumi/lnme)                                                       | [01][01] [06][06] [09][09] [16][16]          |
+|[无地址](https://github.com/futurepaul/addressless)| [01][01] [06][06] [09][09] [16][16]          |
+|[Bleskomat](https://github.com/samotari/bleskomat)| [01][01] [03][03]                            |
+|[BtcPayServer](https://btcpayserver.org/)| [01][01] [06][06] [16][16] [17][17]          |
+|[Citadel 比特币节点](https://github.com/runcitadel)| [01][01] [06][06] [16][16]                   |
+|[Cypherapp](https://github.com/SatoshiPortal/lnurl_cypherapp)| [01][01] [03][03]                            |
+|[lnurl 守护进程](https://github.com/yanascz/lnurld)| [01][01] [06][06] [09][09] [12][12] [16][16] |
+|[LNURLPoS](https://github.com/arcbtc/LNURLPoS)| [01][01] [06][06] [09][09]                   |
+|[LNURLp](https://github.com/lnbits/lnbits/tree/master/lnbits/extensions/lnurlp)| [01][01] [06][06] [12][12]                   |
+|[LNURLw](https://github.com/lnbits/lnbits/tree/master/lnbits/extensions/withdraw)| [01][01] [03][03]                            |
+|[LNbits.com](https://github.com/fiatjaf/lnbits)| [01][01] [03][03] [04][04] [14][14] [15][15] |
+|[闪电 ATM](https://github.com/21isenough/LightningATM)| [01][01] [03][03]                            |
+|[NextPay](https://github.com/apotdevin/NextPay)| [01][01] [06][06] [16][16]                   |
+|[离线商店](https://github.com/lnbits/lnbits/tree/master/lnbits/extensions/offlineshop)| [01][01] [06][06] [09][09]                   |
+|[Satdress](https://github.com/fiatjaf/satdress)| [01][01] [06][06] [09][09] [16][16]          |
+|[拖缆副驾驶](https://github.com/lnbits/lnbits/tree/master/lnbits/extensions/copilot)| [01][01] [06][06] [12][12]                   |
+|[GO-主机-LNADDR](https://github.com/hieblmi/go-host-lnaddr)| [01][01] [06][06] [09][09] [16][16]          |
+|[ligess](https://github.com/Dolu89/ligess/)| [01][01] [06][06] [09][09] [16][16]          |
+|[lnme](https://github.com/bumi/lnme)| [01][01] [06][06] [09][09] [16][16]          |
 
-Libraries
+图书馆
 ---------
 
-| Name                                                  | LUDs                                                                                                                                                     |
+| Name                                                  |卢兹|
 | ----                                                  | ----                                                                                                                                                     |
 | [IMMORTAN](https://github.com/fiatjaf/IMMORTAN)       | [01][01] [02][02] [03][03] [04][04] [05][05] [06][06] [07][07] [08][08] [09][09] [10][10] [11][11] [12][12] [16][16] [17][17] [18][18] [20][20]          |
 | [LNURL C#](https://github.com/Kukks/LNURL)            | [01][01] [02][02] [03][03] [04][04] [06][06] [07][07] [08][08] [09][09] [10][10] [11][11] [12][12] [14][14] [15][15] [16][16] [17][17] [18][18] [19][19] |
@@ -173,16 +173,15 @@ Libraries
 | [spring-lnurl][springlnurl]                           | [01][01] [04][04]                                                                                                                                        |
 | [lnurl_client-ex][lnurl_client-ex]                    | [01][01] [06][06]                                                                                                                                        |
 
-[rust-lnurl]: https://github.com/edouardparis/rust-lnurl
-[lnurl-rs]: https://github.com/benthecarman/lnurl-rs
+[rust-lnurl]: https://github.com/edouardparis/rust-lnurl [lnurl-rs]: https://github.com/benthecarman/lnurl-rs
 [platformio]: https://github.com/chill117/lnurl-platformio
 [springlnurl]: https://github.com/theborakompanioni/bitcoin-spring-boot-starter#spring-lnurl
 [lnurl_client-ex]: https://github.com/ramontayag/lnurl_client-ex
 
-Tools for developers
+开发人员的工具
 --------------------
 
-| Name                                                                   | LUDs                                                                                                        |
+| Name                                                                   |卢兹|
 | ----                                                                   | ----                                                                                                        |
 | [LNURLProxyAPI](https://github.com/21isenough/LNURLProxyAPI)           | [01][01] [03][03]                                                                                           |
 | [Lightning Decoder](https://lightningdecoder.com/)                     | [01][01] [02][02] [03][03] [04][04] [06][06] [16][16]                                                       |
@@ -217,18 +216,18 @@ Tools for developers
 [19]: 19.md
 [20]: 20.md
 
-Dependency Tree
+依赖关系树
 ---------------
 
-The entire idea of the suite of LNURL protocols is that they are optional. Each new LUD may be implemented by some wallets and not others, some services and not others, but they should still maintain compatibility at all times (except, of course, if the service _requires_ the new functionality).
+LNURL 协议套件的整体思想是它们是可选的。每个新的 Lud 可以由一些钱包而不是其他钱包实现，由一些服务而不是其他服务实现，但它们仍应始终保持兼容性（当然，如果服务_要求_具有新功能，则除外）。
 
-There is also a hierarchy of internal dependencies between the LUDs -- for example, you cannot implement sending comments in `payRequest`s if you haven't implemented the base `payRequest` spec also. The following graph displays that hierarchy of internal dependencies (you can safely ignore it though).
+在 Lud 之间还有一个内部依赖关系的层次结构--例如，如果你还没有实现基本 `payRequest` 规范，则不能在 S 中实现发送注释 `payRequest`。下图显示了内部依赖关系的层次结构（但你可以安全地忽略它）。
 
 [![dependencies](dependencies.png)](dependencies.dot)
 
-How to add your own document
+如何添加自己的文档
 ----------------------------
 
-Open a pull request with your proposal. Pick the next unreserved number for your proposal. To be accepted, it just has to be generally decent and make sense and be implemented or currently being implemented by 2 or more wallets.
+用你的建议打开一个拉取请求。为你的建议选择下一个未保留的号码。要被接受，它必须是体面的，有意义的，并由 2 个或更多的钱包实施或目前正在实施。
 
-Join https://t.me/lnurl if you just want to talk about your ideas or chat about LNURL protocols in general.
+如果你只是想谈论你的想法或谈论一般的 LNURL 协议，请加入https://t.me/lnurl 。
